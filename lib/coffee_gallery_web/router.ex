@@ -17,7 +17,8 @@ defmodule CoffeeGalleryWeb.Router do
   scope "/", CoffeeGalleryWeb do
     pipe_through :browser
 
-    live "/", CoffeeGalleryLive
+    live "/", GalleryLive
+    live "/admin", AdminLive
   end
 
   # Other scopes may use custom stacks.
